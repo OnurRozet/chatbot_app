@@ -6,9 +6,7 @@ import React from "react";
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit, isLoading } =
-    useChat({
-      api: "/api/chat",
-    });
+    useChat();
 
   return (
     <div className="relative max-w-2xl mx-auto">
